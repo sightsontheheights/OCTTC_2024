@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+    --background-colour: #ffffff;
+    --text-colour: #0c2340;
+}
+
+html,
+body {
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.top-notification__container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.top-notification__text {
+    font-weight: 700;
+    text-align: center;
+    padding: 0.25rem;
+    background-color: #0c2340;
+    color: #ff0000;
+}
+
+.branding__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.branding__logo {
+    padding-top: 2rem;
+    width: 150px;
+    height: 150px;
+}
+
+.branding__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.navigation-links__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-links__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--text-colour);
+}
+
+.navigation-links__item {
+    padding: 0.5rem;
+}
+
+.navigation-links__item a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits color from navigation-links__item */
+    font-weight: 400;
+    padding: 0.5rem; /* Add padding for clickable area */
+}
+
+.navigation-links__item a:hover,
+.navigation-links__item a:active,
+.navigation-links__item a:focus {
+    text-decoration: underline; /* Adds underline on hover, active and focus */
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-sizing: border-box; /* ensures padding does not add to the width */
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__image img {
+    width: 100%;
+    height: auto;
+}
+
+.section__title {
+    font-size: 1.3rem;
+}
+
+.section__title,
+.section__text {
+    width: 100%;
+    text-align: center;
+}
+
+/* Mobile and small screens styles */
+@media (max-width: 768px) {
+    .section__container {
+        padding: 1rem 0.5rem;
+    }
+
+    .section__title,
+    .section__text {
+        padding: 0 1rem;
+        max-width: none; /* Remove max-width to allow text to fill the container */
+    }
+
+    .navigation-links__list {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center items when they're in a column */
+    }
+
+    .branding__title {
+        font-size: 1.3rem;
+    }
+
+    .section__image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: start;
+    text-align: center;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
