@@ -13,10 +13,12 @@ A simple and informative website for the **Ottawa Chinese Table Tennis Club** cr
 ![Website Preview](./screenshot.jpg)
 
 ## Project Structure
+```
 ├── images/          # Folder of images used in the website 
 ├── index.html       # Main HTML file
 ├── style.css        # CSS file for styling
 └── table_logo.psd   # Photoshop file for the club logo
+```
 
 ## Tech Stack
 HTML
