@@ -10,7 +10,7 @@ A simple and informative website for the **Ottawa Chinese Table Tennis Club** cr
 
 ## Demo
 
-![Website Preview](./screenshot.png)
+![Website Preview](./screenshot.jpg)
 
 ## Project Structure
 ├── images/          # Folder of images used in the website 
