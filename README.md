@@ -21,9 +21,9 @@ A simple and informative website for the **Ottawa Chinese Table Tennis Club** cr
 ```
 
 ## Tech Stack
-HTML
-CSS
-JavaScipt
+- HTML
+- CSS
+- JavaScipt
 
 ## License
 This project is licensed under the MIT License
